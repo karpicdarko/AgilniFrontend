@@ -1,0 +1,255 @@
+.infoBox {
+	display: flex;
+	width: 100%;
+	height: 570px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: #1d2b45;
+	background-size: 100% 100%;
+}
+
+.boxLeft {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pictureBox {
+	box-shadow: 0 0 5px 5px rgb(105, 72, 72);
+	margin: auto;
+	width: 300px;
+	height: 450px;
+	background-color: hotpink;
+}
+
+.boxRight {
+	width: 70%;
+	/* background-color: green; */
+}
+
+.infoText {
+	width: auto;
+	height: auto;
+	margin-right: 10px;
+}
+
+.title {
+	margin-top: 10%;
+}
+
+.title > h1 {
+	display: flex;
+	align-items: baseline;
+	margin: 0;
+	padding: 0;
+}
+
+.title > h1 > p {
+	margin: 0;
+	padding: 0;
+}
+
+#name {
+	color: white;
+	font-weight: bolder;
+	font-size: 35px;
+	font-weight: 700;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#year {
+	color: rgba(255, 255, 255, 0.89);
+	font-size: 35px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.facts {
+	display: flex;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.dotContainer {
+	display: flex;
+	align-items: center;
+}
+
+.dot {
+	height: 5px;
+	width: 5px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 50%;
+	display: inline-block;
+	margin: 5px;
+}
+
+.genre > p {
+	display: inline-block;
+}
+
+.genre > p:after {
+	content: ', ';
+}
+
+.genre > p:last-of-type:after {
+	content: '';
+}
+
+.rating {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	align-items: center;
+}
+
+.rate {
+	margin-left: 10px;
+	align-items: center;
+	color: white;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.badge > img {
+	height: 35px;
+	width: 45px;
+}
+
+.tagline {
+	color: rgba(255, 255, 255, 0.616);
+	margin-top: 30px;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.overviewText {
+	color: white;
+}
+
+.overviewText > h2 {
+	margin-top: 5px;
+	margin-bottom: 8px;
+	font-weight: 600;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.overviewText > p {
+	color: rgba(255, 255, 255, 0.89);
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-weight: 400;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: justify;
+}
+
+.bottomInfo {
+	display: flex;
+	/* border-style: solid; */
+}
+
+.leftInfo {
+	width: 75%;
+	height: 405px;
+	margin-left: 40px;
+	/* border-style: dashed; */
+	font-size: 23px;
+	font-weight: 600;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	/* background-color: yellow; */
+}
+
+.castTitle {
+	margin-bottom: 10px;
+}
+
+.castCards {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.card {
+	width: 140px;
+	height: 310px;
+	/* border-style: double; */
+	margin: 5px 20px 5px 0px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.actName {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.actRole {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.rightInfo {
+	width: 25%;
+	height: 405px;
+
+	/* border-style: dashed; */
+	/* background-color: green; */
+}
+
+.rightInfoLi {
+	font-size: 17px;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 15px 0px 5px 3px;
+}
+
+.liTitle {
+	font-weight: 600;
+}
+
+.liContent {
+	font-weight: 400;
+}
+
+.updateField {
+	margin: 10px;
+}
+
+.updateFieldOverview {
+	margin: 10px;
+}
+
+.update {
+	display: flex;
+}
+
+.updateLeft {
+	width: 25%;
+	height: 100%;
+}
+
+.updateRight {
+	width: 75%;
+	height: 100%;
+}
+
+.updatePictureBox {
+	padding: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 90%;
+	height: 95%px;
+}

@@ -1,0 +1,263 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cardAll {
+	margin-left: 10px;
+}
+
+.block {
+	width: 230px;
+	height: 340px;
+	margin: 20px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 2px 2px 15px 2px #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0px solid #fff;
+	transition: all 500ms linear;
+}
+
+.overlay {
+	width: 100%;
+	height: 100px;
+	background-color: rgba(237, 238, 247, 0.6);
+	transform: scale(2) rotate(35deg) translateY(-150px);
+	transition: all 800ms ease;
+	z-index: 100;
+}
+
+.bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	transition: all 400ms ease;
+}
+
+.blockTitle {
+	font-size: 17px;
+	font-weight: 700;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.blockYear {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: normal;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.box:hover {
+	cursor: pointer;
+}
+
+.block:hover .overlay {
+	transform: scale(2) rotate(45deg) translateY(200px);
+}
+
+.block:hover .bg {
+	transform: scale(1.2);
+}
+
+.head {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+	z-index: 20;
+}
+
+h2 {
+	padding-top: 50px;
+	text-shadow: 0 0 1px #111;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.box {
+	bottom: 20px;
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	color: #fff;
+	padding: 0 20px;
+	font-weight: 400;
+	transform: translate(200px);
+	transition: all 400ms ease;
+	background-color: #0d253f;
+	/* border-top-left-radius: 25px; */
+	border-bottom-left-radius: 25px;
+}
+
+.box p {
+	letter-spacing: 3px;
+	line-height: 150%;
+}
+
+.block:hover .box {
+	transform: translate(0px);
+}
+
+#footer {
+	position: fixed;
+	right: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	bottom: 0;
+}
+#footerback {
+	text-align: center;
+	float: right;
+}
+
+#fab {
+	background-color: #0d253f;
+	color: white;
+}
+
+.ReactTags__remove {
+	border: none;
+	cursor: pointer;
+	background: none;
+	color: black;
+	margin-left: 3px;
+}
+
+.ReactTags__tags {
+	position: relative;
+}
+
+.ReactTags__clearAll {
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px;
+	background: #f88d8d;
+	color: #fff;
+	border: none;
+}
+
+/* Styles for the input */
+.ReactTags__tagInput {
+	border-radius: 2px;
+	display: inline-block;
+}
+.ReactTags__tagInput input.ReactTags__tagInputField,
+.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+	padding-bottom: 5px;
+	margin: 0;
+	font-size: 16px;
+	font-weight: lighter;
+	border: none;
+	outline: none;
+	color: black;
+	border-bottom: 1px solid #949494;
+}
+
+.ReactTags__tagInput input.ReactTags__tagInputField:hover {
+	border-bottom: 2px solid black;
+}
+
+.ReactTags__editInput {
+	border-radius: 1px;
+}
+
+.ReactTags__editTagInput {
+	display: inline-flex;
+}
+
+/* Styles for selected tags */
+.ReactTags__selected span.ReactTags__tag {
+	border: 1px solid #9c9c9c;
+	color: #071422;
+	font-size: 12px;
+	display: inline-block;
+	padding: 5px;
+	margin: 0 5px 5px;
+	border-radius: 2px;
+}
+.ReactTags__selected span.ReactTags__tag:first-child {
+	margin-left: 0px;
+}
+.ReactTags__selected a.ReactTags__remove {
+	color: #aaa;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.posterLoaded {
+	position: relative;
+}
+
+.backdropLoaded {
+	position: relative;
+}
+
+.middle {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text {
+	color: black;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.posterLoaded:hover .image {
+	opacity: 0.3;
+}
+
+.posterLoaded:hover .middle {
+	opacity: 1;
+}
+
+.backdropLoaded:hover .image {
+	opacity: 0.3;
+}
+
+.backdropLoaded:hover .middle {
+	opacity: 1;
+}
+
+.posterImage {
+	margin-top: 20px;
+	padding: 5px;
+}
+
+.backdropImage {
+	margin-top: 20px;
+	padding: 5px;
+}
+
+.pagination {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
